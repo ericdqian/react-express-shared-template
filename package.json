@@ -1,11 +1,11 @@
 {
   "name": "@template/root",
-  "version": "3.0.0",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "repository": "git@github.com:eric-qian-d/react-node-shared-template.git",
   "author": "Eric <eric.qian.d@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.3.0"
 }
