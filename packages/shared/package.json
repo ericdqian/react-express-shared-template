@@ -1,0 +1,14 @@
+{
+  "name": "shared",
+  "scripts": {
+    "build": "npx swc ./src -d dist",
+    "build:watch": "npx swc ./src -d dist -w"
+  },
+  "exports": {
+    "./getTime/*": "./dist/getTime/*"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.22"
+  }
+}
