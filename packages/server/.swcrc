@@ -7,10 +7,10 @@
             "syntax": "typescript",
             "tsx": false,
         },
-        "paths": {
-            "@shared/*": ["./*"]
-        },
         "target": "es2021",
-        "baseUrl": "./"
+        "baseUrl": "./src",
+        "paths": {
+            "@server/*": ["./*"]
+        }
     }
 }
