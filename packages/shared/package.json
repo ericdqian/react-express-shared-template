@@ -1,11 +1,16 @@
 {
   "name": "shared",
   "scripts": {
-    "build": "npx swc ./src -d dist",
-    "build:watch": "npx swc ./src -d dist -w"
+    "build": "npx swc ./src -d dist/src --config-file .swcrc",
+    "build:watch": "npx swc ./src -d dist/src --config-file .swcrc -w"
   },
   "exports": {
-    "./getTime/*": "./dist/getTime/*"
+    ".": "./index.js",
+    "./util1": "./dist/src/util1/index.js",
+    "./util2": "./dist/src/util2/index.js"
+  },
+  "dependencies": {
+    "cross-env": "5.0.5"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
