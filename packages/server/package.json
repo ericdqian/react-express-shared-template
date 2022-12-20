@@ -2,6 +2,7 @@
   "name": "server",
   "scripts": {
     "build": "npx swc ./src -d dist/src --config-file .swcrc",
+    "build:watch": "npx swc ./src -d dist/src --config-file .swcrc -w",
     "start": "node dist/src/app.js"
   },
   "dependencies": {
