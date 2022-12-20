@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "@webapp/shared",
   "scripts": {
     "build": "npx swc ./src -d dist/src --config-file .swcrc",
     "build:watch": "npx swc ./src -d dist/src --config-file .swcrc -w"

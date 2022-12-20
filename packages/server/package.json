@@ -5,6 +5,7 @@
     "start": "node dist/src/app.js"
   },
   "dependencies": {
+    "@webapp/shared": "workspace:^",
     "express": "^4.18.2"
   },
   "devDependencies": {

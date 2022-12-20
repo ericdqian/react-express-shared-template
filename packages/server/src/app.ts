@@ -1,9 +1,12 @@
 import express from 'express'
-import { testFunction } from 'shared/util2';
 import testRouter from '@server/routers/testRouter'
+import { testServerUtil } from '@server/utils/testUtil';
+import { testFunction } from '@webapp/shared/util2';
 
 const app = express();
 const port = 8080;
+
+testServerUtil()
 
 const x = testFunction(1, 2 )
 console.log('x', x)

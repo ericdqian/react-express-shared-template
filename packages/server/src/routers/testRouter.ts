@@ -1,5 +1,5 @@
 import express from 'express';
-import { testFunction } from 'shared/util2';
+import { testFunction } from '@webapp/shared/util2';
 
 const router = express.Router()
 

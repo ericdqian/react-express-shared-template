@@ -25,7 +25,7 @@
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": "./",
     "paths": {
-        "shared/*": ["../shared/src/*"],
+        "@webapp/shared/*": ["../shared/src/*"],
         "@server/*": ["./src/*"]
 
     },                                     
