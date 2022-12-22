@@ -8,7 +8,7 @@ const port = 8080;
 
 testServerUtil()
 
-const x = testFunction(1, 2 )
+const x = testFunction(1, 3)
 console.log('x', x)
 
 app.get('/health', (req, res) => {

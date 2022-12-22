@@ -1,8 +1,14 @@
 {
   "name": "server",
   "scripts": {
+    "dev": "node dist/src/app.js",
+    "dev:watch": "nodemon --watch dist/ --watch ../shared/dist --exec node dist/src/app.js",
     "build": "npx swc ./src -d dist/src --config-file .swcrc",
     "build:watch": "npx swc ./src -d dist/src --config-file .swcrc -w",
+    "build-shared": "cd ../shared && yarn build",
+    "build-shared:watch": "cd ../shared && yarn build:watch",
+    "build-shared-and-server": "concurrently 'npm:build' && 'npm:build-shared'",
+    "build-shared-and-server:watch": "concurrently \"npm:build:watch\" \"npm:build-shared:watch\"",
     "start": "node dist/src/app.js"
   },
   "dependencies": {
@@ -10,6 +16,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.14"
+    "@types/express": "^4.17.14",
+    "nodemon": "^2.0.20"
   }
 }

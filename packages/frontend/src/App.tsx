@@ -5,7 +5,7 @@ import React, { useMemo, useRef, useState } from 'react';
 import { testFunction } from '@webapp/shared/util2';
 import { Test } from '@frontend/Test';
 
-const testSum = testFunction(1, 2);
+const testSum = testFunction(1, 1);
 console.log('test sum', testSum);
 
 function App() {
