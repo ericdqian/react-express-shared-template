@@ -15,7 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
+    "baseUrl": "./",
+    "paths": {
+      "@webapp/shared/*": ["../shared/src/*"],
+      "@frontend/*": ["./src/*"]
+    }
   },
-  "include": ["./*"]
+  "include": ["src/**/*"] /* For some reason this is important. ["./"] for instance does not work */
 }
