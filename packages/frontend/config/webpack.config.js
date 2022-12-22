@@ -420,7 +420,7 @@ module.exports = function (webpackEnv) {
             },
             // Attempt for shared dir
             {
-              test: /\.(js|mjs|jsx|ts|tsx)$/,
+              test: /\.(js|mjs|jsx)$/,
               include: paths.sharedSrc,
               loader: require.resolve('babel-loader'),
               options: {
