@@ -7,5 +7,12 @@
   "repository": "git@github.com:eric-qian-d/react-node-shared-template.git",
   "author": "Eric <eric.qian.d@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "dev-frontend": "ENTRYPOINTS=app-frontend node devServerEntrypoints.js",
+    "dev-server": "ENTRYPOINTS=app-server node devServerEntrypoints.js"
+  }
 }
