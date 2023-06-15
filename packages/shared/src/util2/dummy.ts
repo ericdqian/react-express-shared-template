@@ -1,5 +1,5 @@
-import { addNow } from '../util1/add';
+import { add1 } from '../util1/add';
 
 export function testFunction(num1: number, num2: number) {
-  return addNow(num1, num2);
+  return add1(num1, num2);
 }
